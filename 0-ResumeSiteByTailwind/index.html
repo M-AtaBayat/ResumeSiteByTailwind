@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohammad Ata Bayat ResumeSite By Tailwind</title>
+
+  <!-- Tailwind CDN -->
+  <script src="./assets/vendor/Tailwind/Tailwind.17"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/vendor/aos/aos.css">
+</head>
+<body class="antialiased bg-gray-900 text-gray-100">
+
+  <!-- Header -->
+  <header class="fixed inset-x-4 top-4 z-50"data-aos="fade-down" data-aos-delay="300">
+    <div class="backdrop-blur-md bg-black/40 border border-white/10 rounded-2xl shadow-neon px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="flex items-center gap-3">
+          <div>
+            <h1 class="text-lg font-extrabold font-title">محمد عطا بیات</h1>
+            <p class="text-xs text-gray-300">توسعه‌دهنده و طراح وب</p>
+          </div>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-16">
+        <a href="#about" class="text-gray-200 transition hover:text-brand  hover:scale-105 hover:-translate-y-1 hover:rotate-1">درباره من</a>
+        <a href="#skills" class="text-gray-200 hover:text-brand transition hover:scale-105 hover:-translate-y-1 hover:rotate-1">مهارت‌ها</a>
+        <a href="#contact" class="text-gray-200 hover:text-brand transition hover:scale-105 hover:-translate-y-1 hover:rotate-1">تماس با من</a>
+      </nav>
+
+      <div class="flex md:hidden items-center gap-3">
+        <button id="menuBtn" class="p-2 rounded-lg bg-white/20 hover:bg-white/30 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden mt-2 rounded-xl overflow-hidden shadow-lg hidden">
+      <div class="bg-black/50 backdrop-blur-md p-4 flex flex-col gap-3">
+        <a href="#about" class="py-2 px-3 rounded-md hover:bg-gray-100 hover:bg-gray-800 hover:scale-105 hover:-translate-y-1 hover:rotate-1">درباره من</a>
+        <a href="#skills" class="py-2 px-3 rounded-md hover:bg-gray-100 hover:bg-gray-800 hover:scale-105 hover:-translate-y-1 hover:rotate-1">مهارت‌ها</a>
+        <a href="#contact" class="py-2 px-3 rounded-md hover:bg-gray-100 hover:bg-gray-800 hover:scale-105 hover:-translate-y-1 hover:rotate-1">تماس با من</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-36 overflow-hidden">
+
+    <!-- Hero -->
+    <section id="about" class="mx-auto max-w-6xl px-6">
+      <div class="grid lg:grid-cols-2 gap-8 items-center">
+        <div class="order-2 lg:order-1 " data-aos="fade-left" data-aos-delay="300">
+          <h2 class="text-4xl md:text-5xl font-extrabold mb-4">محمد عطا بیات</h2>
+          <p class="text-gray-300 mb-6">
+            برنامه نویس و طراح وب از سال ۱۳۹۹ تا اکنون با سابقه کار تخصصی در برنامه نویسی وب، توسعه دهنده وب با تجربه و مهارت در تمام مراحل توسعه پیشرفته وب از جمله فرانت انذ و بک اند. 
+          </p>
+
+          <!-- Badges -->
+          <div class="mt-6 flex gap-3 flex-wrap">
+            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm">Front End</span>
+            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm">Back End</span>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div class="relative">
+            <div class="w-64 h-64 rounded-full bg-gradient-to-tr from-accent to-brand p-1 shadow-neon-strong transform hover:rotate-3 hover:scale-105 transition" data-aos="fade-right" data-aos-delay="300">
+              <img src="./assets/img/my-profile-img.jpg" alt="profile" class="w-full h-full object-cover rounded-full border-4 border-gray-900">
+            </div>
+            <!-- neon blobs -->
+            <div class="absolute -left-6 -bottom-6 w-20 h-20 rounded-full bg-glow/30 blur-2xl opacity-80"></div>
+            <div class="absolute -right-6 -top-6 w-16 h-16 rounded-full bg-accent/30 blur-xl"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="mt-16 mx-auto max-w-6xl px-6">
+      <h3 class="text-2xl font-bold mb-6 text-right" data-aos="fade-up" data-aos-delay="300">مهارت‌ها</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Skill card -->
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-800 rounded-3xl p-6 shadow-neon hover:shadow-neon-strong transform hover:-translate-y-2 hover:rotate-1 transition">
+            <h4 class="text-center">HTML & CSS</h4>
+            <br>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-white from-brand to-accent" style="width:90% !important"></div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-800 rounded-3xl p-6 shadow-neon hover:shadow-neon-strong transform hover:-translate-y-2 hover:rotate-1 transition">
+            <h4 class="text-center">Bootstrap</h4>
+            <br>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-white from-brand to-accent" style="width:95% !important"></div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-800 rounded-3xl p-6 shadow-neon hover:shadow-neon-strong transform hover:-translate-y-2 hover:rotate-1 transition">
+            <h4 class="text-center">Tailwind</h4>
+            <br>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-white from-brand to-accent" style="width:70% !important"></div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-800 rounded-3xl p-6 shadow-neon hover:shadow-neon-strong transform hover:-translate-y-2 hover:rotate-1 transition">
+            <h4 class="text-center">JavaScript</h4>
+            <br>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-white from-brand to-accent" style="width:90% !important"></div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-800 rounded-3xl p-6 shadow-neon hover:shadow-neon-strong transform hover:-translate-y-2 hover:rotate-1 transition">
+            <h4 class="text-center">React</h4>
+            <br>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-white from-brand to-accent" style="width:65% !important"></div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-800 rounded-3xl p-6 shadow-neon hover:shadow-neon-strong transform hover:-translate-y-2 hover:rotate-1 transition">
+            <h4 class="text-center">Node.js</h4>
+            <br>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-white from-brand to-accent" style="width:60% !important"></div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-800 rounded-3xl p-6 shadow-neon hover:shadow-neon-strong transform hover:-translate-y-2 hover:rotate-1 transition">
+            <h4 class="text-center">Responsive & dynamic web deign</h4>
+            <br>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-white from-brand to-accent" style="width:100% !important"></div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-800 rounded-3xl p-6 shadow-neon hover:shadow-neon-strong transform hover:-translate-y-2 hover:rotate-1 transition">
+            <h4 class="text-center">ASP.Net Core</h4>
+            <br>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-white from-brand to-accent" style="width:80% !important"></div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-800 rounded-3xl p-6 shadow-neon hover:shadow-neon-strong transform hover:-translate-y-2 hover:rotate-1 transition">
+            <h4 class="text-center">SQL (Database Management)</h4>
+            <br>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-white from-brand to-accent" style="width:80% !important"></div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-800 rounded-3xl p-6 shadow-neon hover:shadow-neon-strong transform hover:-translate-y-2 hover:rotate-1 transition">
+            <h4 class="text-center">Onionn Architecture</h4>
+            <br>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-white from-brand to-accent" style="width:90% !important"></div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-800 rounded-3xl p-6 shadow-neon hover:shadow-neon-strong transform hover:-translate-y-2 hover:rotate-1 transition">
+            <h4 class="text-center">Github</h4>
+            <br>
+          <div class="w-full bg-gray-200 dark:bg-gray-700 h-2 rounded-full overflow-hidden">
+            <div class="h-2 rounded-full bg-white from-brand to-accent" style="width:90% !important"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-16 mx-auto max-w-6xl px-6 mb-24">
+      <div class="grid lg:grid-cols-2 gap-8 items-stretch">
+        <div data-aos="fade-left" data-aos-delay="300" class="bg-gradient-to-br from-gray-800 to-gray-800/70 rounded-3xl p-8 shadow-neon">
+          <h3 class="text-2xl font-bold mb-4">با من در تماس باش</h3>
+
+          <form class="space-y-4">
+            <div>
+              <label class="text-sm mb-1 block">نام</label>
+              <input class="w-full bg-black/20 backdrop-blur-sm border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand" placeholder="اسم کامل" />
+            </div>
+            <div>
+              <label class="text-sm mb-1 block">ایمیل</label>
+              <input class="w-full bg-black/20 backdrop-blur-sm border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand" placeholder="example@mail.com" />
+            </div>
+            <div>
+              <label class="text-sm mb-1 block">پیام</label>
+              <textarea class="w-full bg-black/20 backdrop-blur-sm border border-gray-700 rounded-lg px-4 py-3 h-32 focus:outline-none focus:ring-2 focus:ring-brand" placeholder="اون پیامی که می‌خوای..."></textarea>
+            </div>
+            <div class="flex gap-3">
+              <button type="submit" class="px-6 py-3 rounded-xl bg-gradient-to-r from-brand to-accent text-white font-semibold shadow-neon hover:scale-105 transition">ارسال پیام</button>
+              <button type="reset" class="px-6 py-3 rounded-xl border border-gray-700">پاک کردن</button>
+            </div>
+          </form>
+        </div>
+
+        <div data-aos="fade-right" data-aos-delay="300" class="rounded-3xl p-8 bg-black/40 backdrop-blur-md border border-white/10 shadow-neon flex flex-col justify-center">
+          <h4 class="font-semibold text-lg mb-3">راه‌های ارتباطی</h4>
+
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center justify-between bg-gray-800 rounded-lg p-3">
+              <div>
+                <p class="text-sm font-medium">ایمیل</p>
+                <p class="text-xs text-gray-500">bayatata88@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between bg-gray-800 rounded-lg p-3">
+              <div>
+                <p class="text-sm font-medium">گیت هاب</p>
+                <p class="text-xs text-gray-500">M-AtaBayat</p>
+              </div>
+              <a class="text-sm text-brand" href="https://github.com/M-AtaBayat">مشاهده</a>
+            </div>
+
+            <div class="flex items-center justify-between bg-gray-800 rounded-lg p-3">
+              <div>
+                <p class="text-sm font-medium">اینستاگرام</p>
+                <p class="text-xs text-gray-500">kalsrexor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/vendor/aos/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  </main>
+</body>
+</html>

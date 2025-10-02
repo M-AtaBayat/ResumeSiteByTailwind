@@ -1,0 +1,36 @@
+
+/* Fonts */
+@font-face {
+    font-family: 'AGhasem';
+    src: url(../font/AGhasem.ttf);
+    unicode-range: U+0600-06FF;
+}
+@font-face {
+    font-family: 'Ziba';
+    src: url(../font/B\ Ziba_0.ttf);
+    unicode-range: U+0600-06FF;
+}
+@font-face {
+    font-family: 'Gladiora';
+    src: url(../font/Gladiora\ Regular.otf);
+    unicode-range: U+0000-007F;
+}
+
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ziba','Gladiora';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'AGhasem';
+}
+.font-title{
+    font-family: 'AGhasem' !important;
+}
